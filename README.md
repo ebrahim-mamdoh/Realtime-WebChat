@@ -1,6 +1,7 @@
 # 💬 تطبيق الدردشة الفورية - Real-time Chat App
 
-تطبيق دردشة فوري كامل الميزات يشبه WhatsApp Web، مبني بـ Next.js و Supabase
+تطبيق دردشة فوري كامل الميزات يشبه WhatsApp Web، مبني بـ Next.js و <img width="1662" height="902" alt="Screenshot 2025-12-01 024301" src="https://github.com/user-attachments/assets/12a4c879-e584-4c37-b593-283b6a9a1363" />
+Supabase
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![React](https://img.shields.io/badge/React-18-blue)
