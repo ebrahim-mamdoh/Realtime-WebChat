@@ -67,15 +67,15 @@ export default function ChatList({ currentUserId }: ChatListProps) {
                     <p className="font-medium text-gray-900 truncate">
                       {otherUser.display_name}
                     </p>
-                    {conversation.lastMessageTime && (
+                    {conversation.last_message_time && (
                       <span className="text-xs text-gray-500">
-                        {formatChatListTime(conversation.lastMessageTime)}
+                        {formatChatListTime(conversation.last_message_time)}
                       </span>
                     )}
                   </div>
                   <p className="text-sm text-gray-500 truncate">
-                    {conversation.lastMessage
-                      ? truncateText(conversation.lastMessage, 40)
+                    {conversation.last_message
+                      ? truncateText(conversation.last_message, 40)
                       : 'No messages yet'}
                   </p>
                 </div>

@@ -132,9 +132,9 @@ export default function ChatWindow({
               <MessageBubble
                 key={message.id}
                 message={message}
-                isOwn={message.senderId === currentUserId}
+                isOwn={message.sender_id === currentUserId}
                 senderName={
-                  message.senderId === currentUserId ? 'You' : otherUser.display_name
+                  message.sender_id === currentUserId ? 'You' : otherUser.display_name
                 }
               />
             ))}

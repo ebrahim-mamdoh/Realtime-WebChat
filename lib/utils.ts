@@ -1,10 +1,9 @@
 import { format, isToday, isYesterday, parseISO } from 'date-fns';
-import { Timestamp } from 'firebase/firestore';
 
-export const formatMessageTime = (timestamp: Timestamp | null): string => {
+export const formatMessageTime = (timestamp: string | null): string => {
   if (!timestamp) return '';
 
-  const date = timestamp.toDate();
+  const date = new Date(timestamp);
 
   if (isToday(date)) {
     return format(date, 'HH:mm');
@@ -17,10 +16,10 @@ export const formatMessageTime = (timestamp: Timestamp | null): string => {
   return format(date, 'MMM d, HH:mm');
 };
 
-export const formatChatListTime = (timestamp: Timestamp | null): string => {
+export const formatChatListTime = (timestamp: string | null): string => {
   if (!timestamp) return '';
 
-  const date = timestamp.toDate();
+  const date = new Date(timestamp);
 
   if (isToday(date)) {
     return format(date, 'HH:mm');

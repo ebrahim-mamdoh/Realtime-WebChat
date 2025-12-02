@@ -22,10 +22,10 @@ export default function MessageBubble({ message, isOwn, senderName }: MessageBub
               : 'bg-gray-200 text-gray-900 rounded-bl-md'
           }`}
         >
-          {message.imageUrl && (
-            <div className="mb-2">
-              <Image
-                src={message.imageUrl}
+          {message.image_url && (
+            <div className="mt-2">
+              <img
+                src={message.image_url}
                 alt="Shared image"
                 width={300}
                 height={300}
@@ -39,7 +39,7 @@ export default function MessageBubble({ message, isOwn, senderName }: MessageBub
               isOwn ? 'text-primary-100' : 'text-gray-500'
             }`}
           >
-            {formatMessageTime(message.timestamp)}
+            {formatMessageTime(message.created_at)}
           </span>
         </div>
       </div>
